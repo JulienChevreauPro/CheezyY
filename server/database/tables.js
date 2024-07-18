@@ -1,5 +1,10 @@
 // Import the repository modules responsible for handling data operations on the tables
-const ItemRepository = require("./models/ItemRepository");
+const BandRepository = require("./models/BandRepository");
+const AlbumRepository = require("./models/AlbumRepository");
+const TrackRepository = require("./models/TrackRepository");
+const PublicationRepository = require("./models/PublicationRepository");
+const MemberRepository = require("./models/MemberRepository");
+const InstrumentRepository = require("./models/InstrumentRepository");
 
 // Create an empty object to hold data repositories for different tables
 const tables = {};
@@ -9,7 +14,12 @@ const tables = {};
 /* ************************************************************************* */
 
 // Register each repository as data access point for its table
-tables.item = new ItemRepository();
+tables.band = new BandRepository();
+tables.album = new AlbumRepository();
+tables.track = new TrackRepository();
+tables.publication = new PublicationRepository();
+tables.member = new MemberRepository();
+tables.instrument = new InstrumentRepository();
 
 /* ************************************************************************* */
 

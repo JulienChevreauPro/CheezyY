@@ -1,9 +1,11 @@
+import React from "react";
 import ReactPlayer from "react-player";
-import ReactAudioPlayer from "react-audio-player";
-
 import clipSource from "../../assets/videos/Clipmini.mp4";
 
 function HomePage() {
+    const tracks = useLoaderData();
+    console.log(tracks);
+    
   return (
     <>
       <ReactPlayer
@@ -15,8 +17,8 @@ function HomePage() {
         width="100%"
         height="100%"
       />
-      <h1>Cheezy Y</h1>
-      <ReactAudioPlayer src={clipSource} controls />
+      <h1>HomePage</h1>
+      <ReactAudioPlayer src="" controls />
     </>
   );
 }
