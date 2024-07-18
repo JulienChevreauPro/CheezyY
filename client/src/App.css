@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #0c0c0c;
+  --secondary-color: #f76d1d;
+  --tertiary-color: #f2dc11;
+  --quaternary-color: #e5bf88;
+  --quinary-color: #9f9a95;
+}
